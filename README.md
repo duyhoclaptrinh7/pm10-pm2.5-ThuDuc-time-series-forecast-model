@@ -1,6 +1,4 @@
 # 🌫️ Dự Báo Nồng Độ Bụi Mịn PM2.5 & PM10 tại TP. Thủ Đức Bằng Phương Pháp Học Máy Thống Kê
-> **Đồ án môn học:** DS102 - Thống kê trong Khoa học Dữ liệu  
-> **Trường:** Đại học Công nghệ Thông tin – ĐHQG-HCM (UIT)
 
 [![Python](https://img.shields.io/badge/Python-3.10%2B-blue.svg?logo=python)](https://www.python.org/)
 [![Scikit-Learn](https://img.shields.io/badge/scikit--learn-F7931E.svg?logo=scikit-learn&logoColor=white)](https://scikit-learn.org/)
@@ -19,18 +17,7 @@ Dự án này ứng dụng các phương pháp **Học máy Thống kê (Statist
 
 ---
 
-## 👥 2. Thành Viên Nhóm Thực Hiện
-
-| STT | Họ và Tên | MSSV | Email |
-| :---: | :--- | :---: | :--- |
-| 1 | **Triệu Đức Duy** | 23520392 | `23520392@gm.uit.edu.vn` |
-| 2 | **Lê Tùng Dương** | 23520348 | `23520348@gm.uit.edu.vn` |
-| 3 | **Đỗ Trần Thế Bảo** | 23520096 | `23520096@gm.uit.edu.vn` |
-| 4 | **Nguyễn Đình Đại** | 23520216 | `23520216@gm.uit.edu.vn` |
-
----
-
-## 📊 3. Thu Thập & Đặc Trưng Dữ Liệu
+## 📊 2. Thu Thập & Đặc Trưng Dữ Liệu
 
 Dữ liệu được thu thập liên tục theo từng giờ tại tọa độ TP. Thủ Đức từ tháng **09/2021 đến tháng 08/2025** (hơn **35.000 mẫu thời gian**), tích hợp từ 2 nguồn API uy tín:
 * **OpenWeatherMap API**: Dữ liệu nồng độ các chất hóa học ô nhiễm.
@@ -60,7 +47,7 @@ Dữ liệu được thu thập liên tục theo từng giờ tại tọa độ 
 
 ---
 
-## ⚙️ 4. Quy Trình Xử Lý & Kỹ Thuật (Pipeline)
+## ⚙️ 3. Quy Trình Xử Lý & Kỹ Thuật (Pipeline)
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
@@ -125,7 +112,7 @@ Dữ liệu được thu thập liên tục theo từng giờ tại tọa độ 
 
 ---
 
-## 🔬 5. Kết Quả Thực Nghiệm & Đánh Giá
+## 🔬 4. Kết Quả Thực Nghiệm & Đánh Giá
 
 Nhóm đã thử nghiệm và tinh chỉnh siêu tham số bằng **Optuna (Bayesian Optimization)** trên 4 họ mô hình:
 1. **Linear Regression / ElasticNet** (Baseline thống kê)
@@ -152,7 +139,7 @@ Nhóm đã thử nghiệm và tinh chỉnh siêu tham số bằng **Optuna (Baye
 
 ---
 
-## 📂 6. Cấu Trúc Thư Mục Repository
+## 📂 5. Cấu Trúc Thư Mục Repository
 
 ```text
 pm10-pm2.5-ThuDuc-time-series-forecast-model/
@@ -197,7 +184,7 @@ pm10-pm2.5-ThuDuc-time-series-forecast-model/
 
 ---
 
-## 🚀 7. Hướng Dẫn Cài Đặt & Sử Dụng
+## 🚀 6. Hướng Dẫn Cài Đặt & Sử Dụng
 
 ### 1. Khởi tạo môi trường
 ```bash
@@ -228,11 +215,3 @@ Notebook này sẽ tự động:
 
 > 📦 **Lưu ý về Pretrained Weights (`.pkl`):**  
 > Do các file model weights của Random Forest và XGBoost có kích thước lớn (> 100MB), các file `.pkl` được lưu trữ tách biệt. Nếu muốn sử dụng lại model weights đã huấn luyện sẵn mà không cần train lại, bạn có thể tải model từ mục Releases trên GitHub hoặc tự động train lại qua các notebook trong `4. Machine Learning`.
-
----
-
-## 📚 8. Tài Liệu Tham Khảo
-1. **World Health Organization (2021)**: *WHO global air quality guidelines: particulate matter (PM2.5 and PM10), ozone, nitrogen dioxide, sulfur dioxide and carbon monoxide.*
-2. **Open-Meteo Documentation**: *Air Quality & Weather Forecast APIs.*
-3. **Friedman, J. H. (1984)**: *A Variable Span Smoother.* Technical Report No. 5, Laboratory for Computational Statistics, Stanford University.
-4. **Hampel, F. R. (1974)**: *The Influence Curve and its Role in Robust Estimation.* Journal of the American Statistical Association.
